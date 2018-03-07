@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jurassic Park Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+
+    <!-- BootStrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+     <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <!-- jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- My JavaScript -->
+    <script src="assets/javascript/app.js"></script>
+
+</head>
+<!-- Start Page (whatever that is) -->
+<!-- <h1 id="start">A Trivia Game of Jurassic Proportions</h1>
+    <button type="button-start">Begin Journey</button>
+</div> -->
+<div class="jumbotron">
+        <h1 class="display-3 text-center">Jurassic Park Trivia</h1>
+        <p class="lead text-center">A trivia game 65 million years in the making.</p>
+        <hr class="my-4">
+        <p class="text-center">This will not be a walk in the park.</p>
+        <p class="lead">
+            <h2 id="text-center"></h2>
+          <a class="center-block btn btn-danger btn-lg" href="#" role="button">Begin Journey</a>
+        </p>
+      </div>
+<!-- Initialize trivia game -->
+<!-- <table>
+        <tr>
+
+           <div id="question"><td>Who wrote the book for which Jurassic Park was based on?</td></div>
+           <div id="a"><td><input type="radio" name="q12_3" value="a">a: Michael Crichton</td></div>
+           <div id="b"><td><input type="radio" name="q12_3" value="b">b: Stephen King</td></div>
+           <div id="c"><td><input type="radio" name="q12_3" value="c">c: Dean Koontz</td></div>
+           <div id="d"><td><input type="radio" name="q12_3" value="d">d: George Orwell</td></div>
+           
+        </tr>
+     </table> -->
+<div id="quiz">
+     <div id="q1">
+<div class="row text-center">
+         <h3>Who wrote the book for which Jurassic Park was based on?</h3>
+ <div class="row text-center">
+            <div class="radio">
+                <label><input type="radio" name="optradio" value="a">a: Michael Crichton
+                    </label>
+                <label><input type="radio" name="optradio" value="b">b: Stephen King
+                    </label>
+                <label><input type="radio" name="optradio" value="c"> c: Dean Koontz
+                    </label>
+                <label><input type="radio" name="optradio" value="d"> d: George Orwell
+                    </label>
+</div>
+</div>
+</div>
+</div>
+
+<div id=q2>
+<div class="row text-center">
+            <h3>What is the name of the island on which Jurassic Park was built?</h3>
+<div class="row text-center">
+    <div class="radio">
+        <label><input type="radio" name="optradio" value="a">a: Los Cincos Muertos
+            </label>
+        <label><input type="radio" name="optradio" value="b">b: Costa Rica
+            </label>
+        <label><input type="radio" name="optradio" value="c">c: Isla Nublar
+            </label>
+        <label><input type="radio" name="optradio" value="d"> d: George Orwell
+            </label>
+
+          
+   </div>
+   </div>
+</div>
+</div>
+
+
+<div id="q2">
+   <div class="row margin-top: 7 text-center">
+        <label class="radio-inline" "text-center">
+            <h3>What is the make and model of the tour vehicles in Jurassic Park?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: Jeep Wrangler
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: Jeep Liberty
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: Ford Explorer
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: Jeep Commander
+             </label>
+   </div>
+   </div>
+   
+   
+<div id="q3">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>John Hammond states that his new park makes his old park in Kenya look like what?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: a petting zoo
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: a flea circus
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: spared no expense
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: an aquarium
+             </label>
+   </div>
+</div>
+
+
+<div id="q4">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>What is the name of the lawyer character?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: Ian Malcolm
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: Donald Genarro
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: Alan Grant
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: Robert Muldoon
+             </label>
+   </div>
+</div>
+
+<div id="q5">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>Why does the tour say that the animals cannot reproduce?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: They are steralized once they reach sexual maturity
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: The animals have a lysene deficiency
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: They are all female
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: There was an error when they were cloned
+             </label>
+   </div>
+</div>
+
+<div id="q6">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>Why is the triceratops ill during the tour?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: It accidentally ate rocks
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: It accidentally ate West Indian Lilac
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: It accidentally ate American Pokeweed
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: It accidentally ate Juniper
+             </label>
+   </div>
+</div>
+
+<div id="q7">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>How many humans are eaten over the course of the movie?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: 12
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: 7
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: 6
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: 5
+             </label>
+   </div>
+</div>
+
+<div id="q8">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>What does Lex refer to herself when Tim says she spends all day on her computer?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: a computer nerd
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: a hacker
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: an internet warrior
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: a UNIX system
+             </label>
+   </div>
+</div>
+
+<div id="q9">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>In 1993, Jurassic Park was the top grossing film of all time. What was the first film to surpass its' record?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: The Lion King
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: Titanic
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: The Phantom Menace
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: The Matrix
+             </label>
+   </div>
+</div>
+
+<div id="q10">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>What filmmaker took over production on Jurassic Park while Spielberg was working on another movie?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: James Cameron
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: Ridley Scott
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: George Lucas
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: Christopher Nolan
+             </label>
+   </div>
+</div>
+
+<div id="q11">
+   <div class="row text-center">
+        <label class="radio-inline" "text-center">
+            <h3>How many combined minutes were dinosaurs shown onscreen?</h3>
+           </div>
+           <div class="row text-center">
+            <label class="radio-inline">
+               <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a">a: 9 minutes
+               </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">b: 22 minutes
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">c: 15 minutes
+             </label>
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">d: 33 minutes 
+             </label>
+   </div>
+   </div>
+
+
+     <button id="submit">Submit!</button>
+     
+<!-- Questions -->
+<!-- <div id= quiz></div>
+<button-id="button-1"></button-id>
+<button-id="button-2"></button-id>
+<button-id="button-3"></button-id>
+<button-id="button-4"></button-id> -->
+<!-- answers -->
+
+<!-- click events -->
+
+<!-- timer -->
+
+<!-- time remaining -->
+
+<!-- terminate game -->
+
+<!-- tally wins -->
+<div class="container">
+    <table class="table">
+        <thead>Wins</thead>
+            <tbody>
+
+            </tbody>
+    </table>
+</div>
+<!-- tally losses -->
+<div class="container">
+    <table class="table">
+        <thead>Losses</thead>
+            <tbody>
+                
+            </tbody>
+    </table>
+</div>
+</div>
+
+<!-- Final page with restart -->
+
+
+<body>
+    
+</body>
+</html>
